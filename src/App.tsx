@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Header} from './sections/00-Header/Header';
 import {Welcome} from './sections/01-Welcome/Welcome';
@@ -14,7 +13,7 @@ import {Footer} from './sections/99-Footer/Footer';
 
 function App() {
   return (
-    <>
+    <div className="generalContainer">
       <Header />
       <Welcome />
       <Experience />
@@ -25,7 +24,7 @@ function App() {
       <AI />
       <Connect />
       <Footer />
-    </>
+    </div>
   );
 }
 

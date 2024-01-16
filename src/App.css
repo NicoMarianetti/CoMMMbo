@@ -1,4 +1,15 @@
-.App {
+.generalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #161e23 0%, #272734 100%);
+  min-height: 100vh;
+  color: white;
+  padding: 0 15rem;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
