@@ -14,7 +14,7 @@ import {Footer} from './sections/99-Footer/Footer';
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Header />
       <Welcome />
       <Experience />
@@ -25,7 +25,7 @@ function App() {
       <AI />
       <Connect />
       <Footer />
-    </>
+    </div>
   );
 }
 

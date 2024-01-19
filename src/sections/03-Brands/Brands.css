@@ -1,0 +1,22 @@
+#brandMain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.brandTitle {
+    font-size: 68px;
+    font-family: "Roboto-Medium";
+    max-width: 612px;
+    text-align: left;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 2rem; /* Set the margin to the desired fixed size */
+}
+
+/* Remove the margin from the last logo to prevent extra spacing */
+.logo:last-child {
+    margin-right: 0;
+}
