@@ -136,9 +136,33 @@ export const Experience = () => {
       <div className="posters">
         {posters.map((poster, index) => {
           return (
-            <div className="posterContainer" key={index}>
+            <div
+              // style={
+              //   posters.length / 2 > index
+              //     ? {
+              //         marginRight: `${
+              //           (Math.trunc(posters.length / 2) - index) * 100
+              //         }px`,
+              //       }
+              //     : {
+              //         marginLeft: `${
+              //           (index - Math.trunc(posters.length / 2)) * 100
+              //         }px`,
+              //       }
+              // }
+              style={{
+                top: '50%',
+                left: `calc(50% - ${
+                  Math.trunc(posters.length / 2) * windowWidth * 0.12
+                }px)`,
+                transform: 'translate(-50%, -50%)',
+                marginLeft: `${index * windowWidth * 0.12}px`,
+              }}
+              className="posterContainer"
+              key={index}>
               <img
-                style={{marginLeft: `${index * windowWidth * 0.15}px`}}
+                // style={{left: `${index * windowWidth * 0.15}px`}}
+
                 src={require(`../../assets/img/${poster}`)}
                 alt={`poster${index}`}
               />

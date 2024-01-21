@@ -20,12 +20,11 @@
 
 .experience {
   position: relative;
-  padding: 0 20rem;
+  padding: 0 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 7rem;
-  margin-left: 5rem;
   margin-right: 5rem;
 }
 
@@ -101,11 +100,16 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0rem 10rem 0 10rem;
-  width: 100%;
   height: 100%;
   flex-wrap: nowrap;
   align-items: center;
   position: relative;
+}
+
+.relativeContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .posterContainer {
