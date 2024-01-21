@@ -12,12 +12,8 @@ import {Connect} from './sections/08-Connect/Connect';
 import {Footer} from './sections/99-Footer/Footer';
 
 function App() {
-  return (
-<<<<<<< HEAD
-    <div className='App'>
-=======
+  return (    
     <div className="generalContainer">
->>>>>>> dev
       <Header />
       <Welcome />
       <Experience />
