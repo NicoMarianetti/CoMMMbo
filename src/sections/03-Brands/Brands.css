@@ -16,7 +16,9 @@
     margin-right: 2rem; /* Set the margin to the desired fixed size */
 }
 
-/* Remove the margin from the last logo to prevent extra spacing */
 .logo:last-child {
     margin-right: 0;
+}.containerBrands {
+  height: 100vh;
+  width: 100vw;
 }
