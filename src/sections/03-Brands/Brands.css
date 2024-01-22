@@ -1,6 +1,6 @@
-#brandMain {
-    display: flex;
-    flex-direction: column;
+.brands {
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
@@ -11,14 +11,15 @@
     text-align: left;
 }
 
+.logoContainer{
+    margin: 70px 0px;
+}
+
 .logo {
-    max-width: 100px;
+    max-height: 103px;
     margin-right: 2rem; /* Set the margin to the desired fixed size */
 }
 
 .logo:last-child {
     margin-right: 0;
-}.containerBrands {
-  height: 100vh;
-  width: 100vw;
 }
