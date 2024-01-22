@@ -1,6 +1,79 @@
 import React from 'react';
 import './Versatility.css';
+import {Typography, TypographyHeader} from '../../assets/typography';
+import {theme} from '../../assets/theme';
 
 export const Versatility = () => {
-  return <div>Versatility</div>;
+  const posters: string[] = [
+    'Big Brother Explosion Mismatch.png',
+    'BG_ FLOWERS 1.png',
+    'Spring Chance Rhythm.png',
+  ];
+
+  return (
+    <div
+      style={{
+        position: 'relative',
+        height: '100%',
+        width: '100%',
+      }}>
+      {/* <div className="firstContainerVesatility"> */}
+      <TypographyHeader
+        className="animateRight"
+        style={{
+          top: '-5%',
+          position: 'absolute',
+          color: '#F5FB59',
+          zIndex: 999,
+          fontSize: 120,
+          whiteSpace: 'nowrap',
+          overflowX: 'visible',
+        }}>
+        VERSATILITY . STYLE . VERSATILITY . STYLE .
+      </TypographyHeader>
+      <TypographyHeader
+        className="animateLeft"
+        style={{
+          position: 'absolute',
+          top: '25%',
+          color: 'transparent',
+          zIndex: 999,
+          fontSize: 120,
+          WebkitTextStrokeWidth: '3px',
+          WebkitTextStrokeColor: theme.text.main,
+          whiteSpace: 'nowrap',
+          overflowX: 'visible',
+        }}>
+        CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE .
+        CONCEPT . STYLE .
+      </TypographyHeader>
+
+      <div className="postersVersatility">
+        {posters.map((poster, index) => (
+          <img
+            key={index}
+            src={require(`../../assets/img/${poster}`)}
+            alt={poster}
+            className={`poster${index + 1}`}
+          />
+        ))}
+
+        {/* <img
+          src={require('../../assets/img/Superchicas Musicales Vol2 POSTER copia 1.png')}
+          alt="poster1"
+          className="firstPoster"
+        />
+        <img
+          src={require('../../assets/img/poster2.png')}
+          alt="poster2"
+          className="secondPoster"
+        />
+        <img
+          src={require('../../assets/img/poster space jam 2.png')}
+          alt="poster3"
+          className="thirdPoster"
+        /> */}
+      </div>
+    </div>
+  );
 };

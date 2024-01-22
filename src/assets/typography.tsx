@@ -14,14 +14,21 @@ const styles = {
 
 type TextProps = {
   style?: React.CSSProperties;
+  className?: string;
+  forwardedRef?: React.RefObject<HTMLParagraphElement>;
+  onAnimationEnd?: () => void;
   children: React.ReactNode;
 };
 
 export const TypographyHeader = (props: TextProps) => {
-  const {children, ...restProps} = props;
+  const {children, forwardedRef, onAnimationEnd, ...restProps} = props;
+  const className = restProps.className ? restProps.className : '';
   return (
     <p
       {...restProps}
+      className={className}
+      ref={forwardedRef}
+      onAnimationEnd={onAnimationEnd}
       style={{
         ...styles.text,
         ...restProps.style,
@@ -33,10 +40,14 @@ export const TypographyHeader = (props: TextProps) => {
 };
 
 export const Typography = (props: TextProps) => {
-  const {children, ...restProps} = props;
+  const {children, forwardedRef, onAnimationEnd, ...restProps} = props;
+  const className = restProps.className ? restProps.className : '';
   return (
     <p
       {...restProps}
+      className={className}
+      ref={forwardedRef}
+      onAnimationEnd={onAnimationEnd}
       style={{
         ...styles.text,
         ...restProps.style,

@@ -1,0 +1,83 @@
+.containerVersatility {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firstContainerVesatility {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.animateRight {
+  animation: moveRight 25s ease-in-out infinite;
+}
+
+.animateLeft {
+  animation: moveLeft 25s ease-in-out infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-60%);
+  }
+  50% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+/* Posters */
+
+.postersVersatility {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 20px repeat(3, 1fr) 20px repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.postersVersatility > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.poster1 {
+  grid-column: 1 / 4;
+  grid-row: 2 / span 2;
+}
+
+.poster2 {
+  grid-column: 5 / 8;
+  grid-row: 1 / span 2;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.poster3 {
+  grid-column: 9 / 12;
+  grid-row: 2 / span 2;
+}
