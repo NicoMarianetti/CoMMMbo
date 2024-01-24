@@ -63,7 +63,7 @@ export const AI = () => {
   };
 
   return (
-    <div className="containerAI">
+    <div className="containerAI" id="AI">
       <div
         style={{
           paddingTop: '2rem',

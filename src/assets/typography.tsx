@@ -18,10 +18,21 @@ type TextProps = {
   forwardedRef?: React.RefObject<HTMLParagraphElement>;
   onAnimationEnd?: () => void;
   children: React.ReactNode;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+  onClick?: () => void;
 };
 
 export const TypographyHeader = (props: TextProps) => {
-  const {children, forwardedRef, onAnimationEnd, ...restProps} = props;
+  const {
+    children,
+    forwardedRef,
+    onAnimationEnd,
+    onMouseEnter,
+    onMouseLeave,
+    onClick,
+    ...restProps
+  } = props;
   const className = restProps.className ? restProps.className : '';
   return (
     <p
@@ -29,6 +40,9 @@ export const TypographyHeader = (props: TextProps) => {
       className={className}
       ref={forwardedRef}
       onAnimationEnd={onAnimationEnd}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
       style={{
         ...styles.text,
         ...restProps.style,
@@ -40,7 +54,15 @@ export const TypographyHeader = (props: TextProps) => {
 };
 
 export const Typography = (props: TextProps) => {
-  const {children, forwardedRef, onAnimationEnd, ...restProps} = props;
+  const {
+    children,
+    forwardedRef,
+    onAnimationEnd,
+    onMouseEnter,
+    onMouseLeave,
+    onClick,
+    ...restProps
+  } = props;
   const className = restProps.className ? restProps.className : '';
   return (
     <p
@@ -48,6 +70,9 @@ export const Typography = (props: TextProps) => {
       className={className}
       ref={forwardedRef}
       onAnimationEnd={onAnimationEnd}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
       style={{
         ...styles.text,
         ...restProps.style,
