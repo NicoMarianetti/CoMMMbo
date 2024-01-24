@@ -1,0 +1,93 @@
+.containerAI {
+  width: 100vw;
+  min-height: 800px;
+  border-radius: 10% 10% 0 0;
+  background: linear-gradient(0deg, #1b1b1c00 0%, #1b1b1c 100%);
+}
+
+.introAI {
+  display: grid;
+  aspect-ratio: 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.titleAIcontainer {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.titleAI {
+  margin: 0;
+  font-size: 300px;
+  background: -webkit-linear-gradient(#da4472, #a178ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descriptionAI {
+  grid-area: 2 / 1 / 3 / 2;
+  font-size: 17px;
+}
+
+.logo1 {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  object-fit: contain;
+}
+
+.logo2 {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Sliders */
+
+.sliderItemContainerAI {
+  padding: 5px;
+}
+
+.sliderItemAI {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  object-fit: contain;
+}
+
+.slidersContainerAI {
+  margin-top: 50px;
+}
+
+/* Buttons */
+
+.buttonsContainerAI {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.buttonAI {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.buttonAI:hover {
+  transform: scale(1.1);
+}
+
+.buttonAI > img {
+  height: 13px;
+}
+
+.arrowLeftAI {
+  transform: rotate(180deg);
+}

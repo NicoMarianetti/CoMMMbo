@@ -12,7 +12,7 @@ import {Connect} from './sections/08-Connect/Connect';
 import {Footer} from './sections/99-Footer/Footer';
 
 function App() {
-  return (    
+  return (
     <div className="generalContainer">
       <Header />
       <Welcome />
