@@ -3,6 +3,8 @@
   height: 800px;
   border-radius: 10% 10% 0 0;
   background: linear-gradient(0deg, #b7b1dc00 0%, #b7b1dc 100%);
+  position: relative;
+  z-index: 1;
 }
 
 /* Tags */
@@ -12,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;  
+  padding-top: 2rem;
   width: 100%;
 }
 

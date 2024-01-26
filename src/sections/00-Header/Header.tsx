@@ -18,22 +18,38 @@ export const Header = () => {
     return text === hoveredText;
   };
 
+  const getTextStyles = (text: string) => {
+    return {
+      color: isTextHovered(text) ? '#a178ea' : theme.text.main,
+      fontSize: '15px',
+      fontWeight: 'bold',
+      cursor: 'pointer',
+    };
+  };
+
   const handleTextClick = (text: string) => {
     const section = document.getElementById(text);
     if (section) {
-      section.scrollIntoView({behavior: 'smooth'});
+      section.scrollIntoView({behavior: 'smooth'}); // Change behavior to 'auto' for longer scroll
     }
   };
 
   return (
     <div className="containerHeader">
+      <div className="mainLogoContainer">
+        <img
+          className="mainLogo"
+          src={require('../../assets/img/FM0.png')}
+          alt="logo"
+        />
+        <img
+          className="mainLogo"
+          src={require('../../assets/img/FM.png')}
+          alt="logo"
+        />
+      </div>
       <TypographyHeader
-        style={{
-          color: isTextHovered('About') ? '#a178ea' : theme.text.main,
-          fontSize: '20px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-        }}
+        style={getTextStyles('About')}
         onMouseEnter={() => handleMouseEnter('About')}
         onMouseLeave={handleMouseLeave}
         onClick={() => handleTextClick('about')}
@@ -41,12 +57,7 @@ export const Header = () => {
         About
       </TypographyHeader>
       <TypographyHeader
-        style={{
-          color: isTextHovered('Services') ? '#a178ea' : theme.text.main,
-          fontSize: '20px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-        }}
+        style={getTextStyles('Services')}
         onMouseEnter={() => handleMouseEnter('Services')}
         onMouseLeave={handleMouseLeave}
         onClick={() => handleTextClick('services')}
@@ -54,12 +65,7 @@ export const Header = () => {
         Services
       </TypographyHeader>
       <TypographyHeader
-        style={{
-          color: isTextHovered('Projects') ? '#a178ea' : theme.text.main,
-          fontSize: '20px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-        }}
+        style={getTextStyles('Projects')}
         onMouseEnter={() => handleMouseEnter('Projects')}
         onMouseLeave={handleMouseLeave}
         onClick={() => handleTextClick('projects')}
@@ -68,12 +74,7 @@ export const Header = () => {
       </TypographyHeader>
       <div className="verticalLine" />
       <TypographyHeader
-        style={{
-          color: isTextHovered('Contact') ? '#a178ea' : theme.text.main,
-          fontSize: '20px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-        }}
+        style={getTextStyles('Contact')}
         onMouseEnter={() => handleMouseEnter('Contact')}
         onMouseLeave={handleMouseLeave}
         onClick={() => handleTextClick('AI')}

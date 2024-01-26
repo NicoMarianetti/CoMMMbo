@@ -46,7 +46,7 @@ export const TypographyHeader = (props: TextProps) => {
       style={{
         ...styles.text,
         ...restProps.style,
-        fontFamily: 'Dancing Script',
+        fontFamily: 'Molgak Classy',
       }}>
       {children}
     </p>

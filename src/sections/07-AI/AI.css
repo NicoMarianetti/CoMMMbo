@@ -3,9 +3,12 @@
   min-height: 800px;
   border-radius: 10% 10% 0 0;
   background: linear-gradient(0deg, #1b1b1c00 0%, #1b1b1c 100%);
+  position: relative;
+  z-index: 0 important;
 }
 
 .introAI {
+  position: relative;
   display: grid;
   aspect-ratio: 2;
   grid-template-columns: 1fr 1fr;
@@ -72,6 +75,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  gap: 10px;
 }
 
 .buttonAI {
@@ -90,4 +94,23 @@
 
 .arrowLeftAI {
   transform: rotate(180deg);
+}
+
+/* Circle blue */
+
+.circleBlur {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120vw;
+  aspect-ratio: 1;
+  background: radial-gradient(circle at center, #086eb74f, #161e23, #161e23);
+  backdrop-filter: blur(202px);
+  -webkit-backdrop-filter: blur(202px);
+  overflow: visible;
+  border: 1px solid transparent; /* Ajusta el grosor del borde según tus necesidades */
+  transition: border 0.5s ease;
+  border-radius: 100%;
+  z-index: -1;
 }

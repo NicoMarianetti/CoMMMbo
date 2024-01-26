@@ -1,0 +1,12 @@
+.circleButton {
+  border-radius: 100%;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition-duration: 500ms;
+}
