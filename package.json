@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm urn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -51,6 +51,7 @@
     "@types/react": "^18.2.48",
     "@types/react-curved-text": "^2.0.3",
     "@types/react-slick": "^0.23.13",
-    "autoprefixer": "10.4.17"
+    "autoprefixer": "10.4.17",
+    "gh-pages": "^6.1.1"
   }
 }
