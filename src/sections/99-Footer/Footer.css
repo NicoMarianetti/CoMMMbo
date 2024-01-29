@@ -1,0 +1,36 @@
+.footerContainer {
+  box-sizing: border-box;
+
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  padding: 30px 300px 0 300px;
+  z-index: 1;
+  width: 100vw;
+  height: 300px;
+}
+
+.infoContainerFooter {
+  display: grid;
+  width: 100%;
+  height: 85%;
+  gap: 10px;
+
+  grid-template: 20px 1fr / 3fr 2fr 2fr 2fr 2fr;
+}
+
+.titleFooter {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contentContainerFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

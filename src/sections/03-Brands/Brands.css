@@ -1,25 +1,26 @@
 .brands {
-    height: 100vh;
-    width: 100%;
-    position: relative;
+  margin-top: 300px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 300px;
 }
 
 .brandTitle {
-    font-size: 68px;
-    font-family: "Roboto-Medium";
-    max-width: 612px;
-    text-align: left;
+  font-size: 68px;
+  font-family: 'Roboto-Medium';
+  max-width: 612px;
+  text-align: left;
 }
 
-.logoContainer{
-    margin: 70px 0px;
+.logoContainer {
+  margin: 70px 0px;
 }
 
 .logo {
-    max-height: 103px;
-    margin-right: 2rem; /* Set the margin to the desired fixed size */
+  max-height: 103px;
+  margin-right: 2rem; /* Set the margin to the desired fixed size */
 }
 
 .logo:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }

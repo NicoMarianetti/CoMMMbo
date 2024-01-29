@@ -1,4 +1,156 @@
 .containerWelcome {
   width: 100vw;
-  height: 100vh;
+  height: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  z-index: 1;
+}
+
+.textContainerWelcome {
+  text-align: justify;
+  font-size: 4.3vw;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textWelcome {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  letter-spacing: 40px;
+  margin: 0;
+}
+
+.textContainerWelcome:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/* Banner */
+
+.bannerWelcomeContainer {
+  height: 75%;
+  aspect-ratio: 0.35;
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  z-index: 1;
+  background-image: url('../../assets/img/liquify\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 30px;
+
+  box-shadow: 0 0 8px 8px #0ba775 inset;
+}
+
+.bannerWelcomeContainer > p {
+  margin: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.circleBannerWelcome {
+  height: 130%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  border-color: transparent;
+
+  background: radial-gradient(circle at center, #086eb74f, #262733, #262733);
+  /* backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+}
+
+.bannerWelcomeContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit; /* Remove this for alternative effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  z-index: -1;
+}
+
+.bannerWelcome {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(8px); /* Updated blur radius */
+  -webkit-filter: blur(8px); /* Updated blur radius */
+}
+
+/* Description */
+
+.descriptionTextWelcomeContainer {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30%;
+  z-index: 99;
+}
+
+.descriptionTextWelcomeContainer {
+  text-align: left;
+  z-index: 9;
+}
+
+/* Right side  */
+
+.rightWelcomeContainer {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.curvedText {
+  transform: rotate(-75deg);
+  z-index: 1;
+  position: relative;
+}
+
+.profilePictureWelcome {
+  height: 25vw;
+  position: absolute;
+  aspect-ratio: 1584/1242;
+  top: 50%;
+  left: 70%;
+  transform: translate(-100%, 0) rotate(60deg);
+  transform-origin: top right;
+  z-index: -1;
+  filter: grayscale(50%);
+  background-blend-mode: luminosity;
+}
+
+.verticalLineWelcome {
+  flex-grow: 1;
+  height: 400px;
+  width: 1px;
+  background-color: #266eb2;
+  margin: 20px;
+  z-index: 1;
 }
