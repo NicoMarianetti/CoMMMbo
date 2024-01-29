@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../assets/img/testLogo.jpeg';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
