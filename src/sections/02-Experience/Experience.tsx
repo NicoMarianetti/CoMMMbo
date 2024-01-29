@@ -91,16 +91,7 @@ export const Experience = () => {
               <TypographyHeader style={experienceNumberStyle}>
                 15
               </TypographyHeader>
-              <div
-                className="yearsExperienceDescription"
-                // style={{
-                //   display: 'flex',
-                //   flexDirection: 'column',
-                //   justifyContent: 'start',
-                //   alignItems: 'start',
-                //   marginRight: widthPercentageToPX('5%'),
-                // }}
-              >
+              <div className="yearsExperienceDescription">
                 <Typography
                   style={{...experienceDescriptionStyle, marginBottom: 0}}>
                   YEARS OF
@@ -134,45 +125,29 @@ export const Experience = () => {
             <Typography style={experienceTagStyleRight}>berlin</Typography>
           </div>
         </div>
-        
       </div>
       <div className="posters">
-      {posters.map((poster, index) => {
-        return (
-          <div
-            // style={
-            //   posters.length / 2 > index
-            //     ? {
-            //         marginRight: `${
-            //           (Math.trunc(posters.length / 2) - index) * 100
-            //         }px`,
-            //       }
-            //     : {
-            //         marginLeft: `${
-            //           (index - Math.trunc(posters.length / 2)) * 100
-            //         }px`,
-            //       }
-            // }
-            style={{
-              top: '50%',
-              left: `calc(50% - ${
-                Math.trunc(posters.length / 2) * windowWidth * 0.12
-              }px)`,
-              transform: 'translate(-50%, -50%)',
-              marginLeft: `${index * windowWidth * 0.12}px`,
-            }}
-            className="posterContainer"
-            key={index}>
-            <img
-              // style={{left: `${index * windowWidth * 0.15}px`}}
-
-              src={require(`../../assets/img/${poster}`)}
-              alt={`poster${index}`}
-            />
-          </div>
-        );
-      })}
+        {posters.map((poster, index) => {
+          return (
+            <div
+              style={{
+                top: '50%',
+                left: `calc(50% - ${
+                  Math.trunc(posters.length / 2) * windowWidth * 0.15
+                }px)`,
+                transform: 'translate(-50%, -50%)',
+                marginLeft: `${index * windowWidth * 0.15}px`,
+              }}
+              className="posterContainer"
+              key={index}>
+              <img
+                src={require(`../../assets/img/${poster}`)}
+                alt={`poster${index}`}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
-  </div>
   );
 };

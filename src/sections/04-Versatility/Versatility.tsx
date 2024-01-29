@@ -14,28 +14,29 @@ export const Versatility = () => {
     <div
       style={{
         position: 'relative',
-        height: '100%',
+        height: '1000px',
         width: '100%',
       }}>
-      {/* <div className="firstContainerVesatility"> */}
       <TypographyHeader
         className="animateRight"
         style={{
-          top: '-5%',
+          top: '20%',
           position: 'absolute',
           color: '#F5FB59',
           zIndex: 999,
           fontSize: 120,
           whiteSpace: 'nowrap',
           overflowX: 'visible',
+          margin: '0',
         }}>
-        VERSATILITY . STYLE . VERSATILITY . STYLE .
+        VERSATILITY . STYLE . VERSATILITY . STYLE . VERSATILITY . STYLE .
+        VERSATILITY . STYLE .
       </TypographyHeader>
       <TypographyHeader
         className="animateLeft"
         style={{
           position: 'absolute',
-          top: '25%',
+          top: '45%',
           color: 'transparent',
           zIndex: 999,
           fontSize: 120,
@@ -43,6 +44,7 @@ export const Versatility = () => {
           WebkitTextStrokeColor: theme.text.main,
           whiteSpace: 'nowrap',
           overflowX: 'visible',
+          margin: 0,
         }}>
         CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE .
         CONCEPT . STYLE .

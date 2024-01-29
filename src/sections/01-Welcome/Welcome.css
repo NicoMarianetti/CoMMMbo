@@ -36,7 +36,7 @@
 /* Banner */
 
 .bannerWelcomeContainer {
-  height: 70%;
+  height: 75%;
   aspect-ratio: 0.35;
   position: absolute;
   top: 15%;
@@ -73,8 +73,8 @@
   border-color: transparent;
 
   background: radial-gradient(circle at center, #086eb74f, #262733, #262733);
-  backdrop-filter: blur(202px);
-  -webkit-backdrop-filter: blur(202px);
+  /* backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
 }
 
 .bannerWelcomeContainer::before {
@@ -107,11 +107,12 @@
   right: 0;
   margin: auto;
   width: 30%;
+  z-index: 99;
 }
 
 .descriptionTextWelcomeContainer {
   text-align: left;
-  z-index: 1;
+  z-index: 9;
 }
 
 /* Right side  */
@@ -133,7 +134,7 @@
 }
 
 .profilePictureWelcome {
-  height: 350px;
+  height: 25vw;
   position: absolute;
   aspect-ratio: 1584/1242;
   top: 50%;
