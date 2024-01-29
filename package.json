@@ -1,6 +1,7 @@
 {
   "name": "commmbo",
   "version": "0.1.0",
+  "homepage": "https://NicoMarianetti.github.io/CoMMMbo",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -9,6 +10,7 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.71",
     "@types/react-dom": "^18.2.18",
+    "babel-preset-react-app": "^10.0.1",
     "react": "^18.2.0",
     "react-curved-text": "^3.0.0",
     "react-dom": "^18.2.0",
@@ -19,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +50,8 @@
     "@types/prop-types": "^15.7.11",
     "@types/react": "^18.2.48",
     "@types/react-curved-text": "^2.0.3",
-    "@types/react-slick": "^0.23.13"
+    "@types/react-slick": "^0.23.13",
+    "autoprefixer": "10.4.17",
+    "gh-pages": "^6.1.1"
   }
 }
