@@ -110,6 +110,8 @@
   width: 28%;
   aspect-ratio: 0.82;
   display: flex;
+  z-index: 99;
+  transition: left 0.3s ease-in-out;
 }
 
 .posterContainer img {
@@ -117,6 +119,11 @@
   height: 100%;
   object-fit: cover;
   right: -10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.posterContainer img:hover {
+  transform: scale(1.05);
 }
 
 .posterContainer img + img {

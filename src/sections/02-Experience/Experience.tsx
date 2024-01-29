@@ -5,6 +5,8 @@ import {theme} from '../../assets/theme';
 import {widthPercentageToPX} from '../../utils/size';
 
 export const Experience = () => {
+  const [hoveredPoster, setHoveredPoster] = useState<number>(-1);
+
   const tagStyle = {
     color: theme.text.main,
     fontSize: 30,
@@ -134,10 +136,16 @@ export const Experience = () => {
                 top: '50%',
                 left: `calc(50% - ${
                   Math.trunc(posters.length / 2) * windowWidth * 0.15
+                }px + ${
+                  hoveredPoster !== -1 && index > hoveredPoster
+                    ? windowWidth * 0.1
+                    : 0
                 }px)`,
                 transform: 'translate(-50%, -50%)',
                 marginLeft: `${index * windowWidth * 0.15}px`,
               }}
+              onMouseEnter={() => setHoveredPoster(index)}
+              onMouseLeave={() => setHoveredPoster(-1)}
               className="posterContainer"
               key={index}>
               <img

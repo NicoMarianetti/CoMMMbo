@@ -24,11 +24,32 @@
 }
 
 .titleAI {
+  display: inline-block;
+  position: relative;
+
   margin: 0;
   font-size: 300px;
   background: -webkit-linear-gradient(#da4472, #a178ea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.titleAI::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 20%;
+  left: 0;
+  background-color: #a178ea;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.titleAI:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .descriptionAI {
@@ -64,14 +85,17 @@
   width: 90%;
   object-fit: contain;
   padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sliderItemAI:hover {
+  transform: scale(1.05);
 }
 
 .slidersContainerAI {
   margin-top: 50px;
   max-width: 100%;
-  padding: auto;
 }
-
 /* Buttons */
 
 .buttonsContainerAI {
