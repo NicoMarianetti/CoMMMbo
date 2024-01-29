@@ -6,8 +6,8 @@
   background: linear-gradient(0deg, #161e23 0%, #272734 100%);
   min-height: 100vh;
   color: white;
-  padding: 0 300px;
-  max-width: 100vw;
+  padding: 0 10%;
+  /* max-width: 100vw; */
 }
 
 html,

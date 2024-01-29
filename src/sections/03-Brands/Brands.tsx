@@ -24,12 +24,12 @@ export const Brands = () => {
 
   const settings = {
     infinite: true,
-    slidesToShow: 6,
-    speed: 300,
+    slidesToShow: 5,
+    speed: 500,
     arrows: false,
-    centerMode: false,
+    centerMode: true,
     focusOnSelect: true,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 768,
@@ -48,19 +48,19 @@ export const Brands = () => {
     </div>
     <div className='logoContainer'>
       <Slider {...settings}>
-        <FacioLogo />
-        <RockRunLogo />
-        <FesteFeirnLogo />
-        <EternoVeranoLogo />
-        <CiGobLogo />
-        <OjovaiLogo />
-        <OpePodcastLogo />
-        <DomingoAmorLogo />
-        <MaHuiLogo />
-        <VRDotLogo />
-        <MonolocoLogo />
-        <CaliforniaLogo />
-        <MoviGoLogo />
+        <div className='logo'><FacioLogo /></div>
+        <div className='logo'><RockRunLogo /></div>
+        <div className='logo'><FesteFeirnLogo /></div>
+        <div className='logo'><EternoVeranoLogo /></div>
+        <div className='logo'><CiGobLogo /></div>
+        <div className='logo'><OjovaiLogo /></div>
+        <div className='logo'><OpePodcastLogo /></div>
+        <div className='logo'><DomingoAmorLogo /></div>
+        <div className='logo'><MaHuiLogo /></div>
+        <div className='logo'><VRDotLogo /></div>
+        <div className='logo'><MonolocoLogo /></div>
+        <div className='logo'><CaliforniaLogo /></div>
+        <div className='logo'><MoviGoLogo /></div>
       </Slider>
     </div>
     

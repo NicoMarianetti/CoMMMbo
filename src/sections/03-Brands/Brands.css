@@ -17,10 +17,17 @@
 }
 
 .logo {
-  max-height: 103px;
-  margin-right: 2rem; /* Set the margin to the desired fixed size */
+  height: auto;
+  width: 330px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo:last-child {
   margin-right: 0;
+}
+
+.logoContainer > * :focus {
+  outline: 0;
 }
