@@ -132,12 +132,15 @@
   transform: translate(-50%, -50%);
   width: 120vw;
   aspect-ratio: 1;
-  background: radial-gradient(circle at center, #086eb74f, #161e23, #161e23);
-  /* backdrop-filter: blur(202px);
-  -webkit-backdrop-filter: blur(202px); */
+  background: radial-gradient(
+    circle at center,
+    #086eb74f,
+    #086eb74f,
+    #161e23,
+    transparent
+  );
   overflow: visible;
   border: 1px solid transparent;
   transition: border 0.5s ease;
-  border-radius: 100%;
   z-index: -1;
 }

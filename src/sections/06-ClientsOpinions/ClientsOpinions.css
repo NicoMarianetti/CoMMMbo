@@ -1,0 +1,10 @@
+.clientsOpinionsContainer {
+  height: 800px;
+  width: 100%;
+  overflow-x: visible;
+  z-index: 9;
+}
+
+.clientsOpinionsTitle {
+  color: #dacaff;
+}

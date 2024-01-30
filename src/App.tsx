@@ -10,6 +10,8 @@ import {ClientsOpinions} from './sections/06-ClientsOpinions/ClientsOpinions';
 import {AI} from './sections/07-AI/AI';
 import {Connect} from './sections/08-Connect/Connect';
 import {Footer} from './sections/99-Footer/Footer';
+import {Typography} from './assets/typography';
+import {ContactButton} from './components/ContactButton';
 
 function App() {
   return (
@@ -21,6 +23,19 @@ function App() {
       <Versatility />
       <FeatureProjects />
       <ClientsOpinions />
+      <div className="getInTouchContainer">
+        <ContactButton
+          text="GET IN TOUCH"
+          borderColor="#F3FA58"
+          fontSize="40px"
+          height={250}
+          width={250}
+          onClick={() => {}}
+          textColor="#F3FA58"
+          backgroundColorHover="#F3FA58"
+          textHoverColor="#000000"
+        />
+      </div>
       <AI />
       <Connect />
       <Footer />
