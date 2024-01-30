@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CoMMMbo/static/css/main.efaee1a5.css",
-    "main.js": "/CoMMMbo/static/js/main.82ea7b9d.js",
+    "main.css": "/CoMMMbo/static/css/main.4dbcc1f2.css",
+    "main.js": "/CoMMMbo/static/js/main.bd5034e8.js",
     "static/js/787.6c5bd28b.chunk.js": "/CoMMMbo/static/js/787.6c5bd28b.chunk.js",
     "static/media/liquify 1.png": "/CoMMMbo/static/media/liquify 1.051e84f0e21140c5007d.png",
     "static/media/ProfilePic.png": "/CoMMMbo/static/media/ProfilePic.7cc8def91dc8778c031c.png",
@@ -26,8 +26,12 @@
     "static/media/EternoVeranoLogo.svg": "/CoMMMbo/static/media/EternoVeranoLogo.89a1c0a8a64fdc50ba5348fa0c8ca27c.svg",
     "static/media/Roboto-Medium.ttf": "/CoMMMbo/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
     "static/media/FacioLogo.svg": "/CoMMMbo/static/media/FacioLogo.4365682ad5438377257e359e52580159.svg",
+    "static/media/client1.png": "/CoMMMbo/static/media/client1.3487236cf3442ca1efea.png",
+    "static/media/client2.png": "/CoMMMbo/static/media/client2.161f6abd5f5d26d71e83.png",
+    "static/media/client3.png": "/CoMMMbo/static/media/client3.52b0679d1491828ee531.png",
     "static/media/FM0.png": "/CoMMMbo/static/media/FM0.d2f19360fdcd4585124e.png",
     "static/media/FesteFeirnLogo.svg": "/CoMMMbo/static/media/FesteFeirnLogo.86bedc10fe7404c89ce9480791c51243.svg",
+    "static/media/client4.png": "/CoMMMbo/static/media/client4.0f4ab1cf12cd59d917b9.png",
     "static/media/OjovaiLogo.svg": "/CoMMMbo/static/media/OjovaiLogo.b8464936c58cccf3354730be8f352db2.svg",
     "static/media/testLogo.jpeg": "/CoMMMbo/static/media/testLogo.efcc19e1904e5e91ba88.jpeg",
     "static/media/OPElogo.svg": "/CoMMMbo/static/media/OPElogo.74a128f38949fffa7f91d2cf1d1d9d76.svg",
@@ -46,12 +50,12 @@
     "static/media/slick.woff": "/CoMMMbo/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/CoMMMbo/index.html",
     "static/media/arrow.svg": "/CoMMMbo/static/media/arrow.6c0d1accce1519d93406fa3d573671f1.svg",
-    "main.efaee1a5.css.map": "/CoMMMbo/static/css/main.efaee1a5.css.map",
-    "main.82ea7b9d.js.map": "/CoMMMbo/static/js/main.82ea7b9d.js.map",
+    "main.4dbcc1f2.css.map": "/CoMMMbo/static/css/main.4dbcc1f2.css.map",
+    "main.bd5034e8.js.map": "/CoMMMbo/static/js/main.bd5034e8.js.map",
     "787.6c5bd28b.chunk.js.map": "/CoMMMbo/static/js/787.6c5bd28b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efaee1a5.css",
-    "static/js/main.82ea7b9d.js"
+    "static/css/main.4dbcc1f2.css",
+    "static/js/main.bd5034e8.js"
   ]
 }
