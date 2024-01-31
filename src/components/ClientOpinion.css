@@ -1,0 +1,54 @@
+.clientContainer {
+  aspect-ratio: 1;
+  margin: 30px;
+  background-color: white;
+  padding: 30px;
+  padding-top: 40px;
+  display: grid;
+  grid-template: 1fr 5fr 2fr / 1fr;
+  border-radius: 2%;
+}
+
+.clientInfoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.startsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.startsContainer {
+  align-self: flex-end;
+}
+
+.star {
+  width: 14px;
+  aspect-ratio: 1;
+}
+
+.clientImageContaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  object-position: center;
+}
+
+.clientImg {
+  height: 50px;
+  aspect-ratio: 1;
+}
+
+.clientInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.clientInfo > p {
+  margin: 0;
+}

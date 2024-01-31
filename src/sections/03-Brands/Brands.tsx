@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './Brands.css';
 import {ReactComponent as FacioLogo} from '../../assets/img/logos/FacioLogo.svg';
 import {ReactComponent as RockRunLogo} from '../../assets/img/logos/Rock&RunLogo.svg';
@@ -17,18 +17,14 @@ import {ReactComponent as MonolocoLogo} from '../../assets/img/logos/MonolocoLog
 import {ReactComponent as CaliforniaLogo} from '../../assets/img/logos/CaliforniaLogo.svg';
 import {ReactComponent as MoviGoLogo} from '../../assets/img/logos/MoviGoLogo.svg';
 
-
-
-
 export const Brands = () => {
-
   const settings = {
     infinite: true,
     slidesToShow: 5,
-    speed: 500,
+    speed: 2000,
     arrows: false,
     centerMode: true,
-    focusOnSelect: true,
+    focusOnSelect: false,
     autoplay: false,
     responsive: [
       {
@@ -41,29 +37,25 @@ export const Brands = () => {
   };
 
   return (
-    // <div>TEST</div>S
-  <div className='brands font-roboto'>
-    <div className='brandTitle'>
-      SOME OF THE BRANDS I CREATED
+    <div className="brands font-roboto">
+      <div className="brandTitle">SOME OF THE BRANDS I CREATED</div>
+      <div className="logoContainer">
+        <Slider {...settings}>
+          <FacioLogo />
+          <RockRunLogo />
+          <FesteFeirnLogo />
+          <EternoVeranoLogo />
+          <CiGobLogo />
+          <OjovaiLogo />
+          <OpePodcastLogo />
+          <DomingoAmorLogo />
+          <MaHuiLogo />
+          <VRDotLogo />
+          <MonolocoLogo />
+          <CaliforniaLogo />
+          <MoviGoLogo />
+        </Slider>
+      </div>
     </div>
-    <div className='logoContainer'>
-      <Slider {...settings}>
-        <div className='logo'><FacioLogo /></div>
-        <div className='logo'><RockRunLogo /></div>
-        <div className='logo'><FesteFeirnLogo /></div>
-        <div className='logo'><EternoVeranoLogo /></div>
-        <div className='logo'><CiGobLogo /></div>
-        <div className='logo'><OjovaiLogo /></div>
-        <div className='logo'><OpePodcastLogo /></div>
-        <div className='logo'><DomingoAmorLogo /></div>
-        <div className='logo'><MaHuiLogo /></div>
-        <div className='logo'><VRDotLogo /></div>
-        <div className='logo'><MonolocoLogo /></div>
-        <div className='logo'><CaliforniaLogo /></div>
-        <div className='logo'><MoviGoLogo /></div>
-      </Slider>
-    </div>
-    
-  </div>
   );
 };
