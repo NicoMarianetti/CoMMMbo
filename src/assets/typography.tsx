@@ -47,6 +47,7 @@ export const TypographyHeader = (props: TextProps) => {
         ...styles.text,
         ...restProps.style,
         fontFamily: 'Molgak Classy',
+        letterSpacing: '1px',
       }}>
       {children}
     </p>
