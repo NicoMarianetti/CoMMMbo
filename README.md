@@ -1,8 +1,8 @@
 Minuta reunion 6/2
 
-[x] Tipografia Molgak Classic: Agregar más interletrado a todos lados
+- [x] Tipografia Molgak Classic: Agregar más interletrado a todos lados
 
-- [ ] Header
+- Header
   - [ ] On hover las secciones que bajen la opacidad, que no cambien de color y aparezca el subrayado igual que en IA
 - Welcome section
   - [ ] Que diga 2024
