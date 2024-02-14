@@ -16,16 +16,18 @@ import {ReactComponent as VRDotLogo} from '../../assets/img/logos/VRDotLogo.svg'
 import {ReactComponent as MonolocoLogo} from '../../assets/img/logos/MonolocoLogo.svg';
 import {ReactComponent as CaliforniaLogo} from '../../assets/img/logos/CaliforniaLogo.svg';
 import {ReactComponent as MoviGoLogo} from '../../assets/img/logos/MoviGoLogo.svg';
+import {Typography} from '../../assets/typography';
+import {theme} from '../../assets/theme';
 
 export const Brands = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 5,
-    speed: 2000,
+    slidesToShow: 6,
+    speed: 200,
     arrows: false,
     centerMode: true,
     focusOnSelect: false,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,
@@ -36,24 +38,61 @@ export const Brands = () => {
     ],
   };
 
+  const brandsTitle = {
+    fontSize: '60px',
+    fontWeight: '700',
+    width: '50%',
+    color: theme.text.main,
+  };
+
   return (
     <div className="brands font-roboto">
-      <div className="brandTitle">SOME OF THE BRANDS I CREATED</div>
+      <div className="brandsTitleContainer">
+        <Typography style={brandsTitle}>
+          SOME OF THE BRANDS I CREATED
+        </Typography>
+      </div>
       <div className="logoContainer">
         <Slider {...settings}>
-          <FacioLogo />
-          <RockRunLogo />
-          <FesteFeirnLogo />
-          <EternoVeranoLogo />
-          <CiGobLogo />
-          <OjovaiLogo />
-          <OpePodcastLogo />
-          <DomingoAmorLogo />
-          <MaHuiLogo />
-          <VRDotLogo />
-          <MonolocoLogo />
-          <CaliforniaLogo />
-          <MoviGoLogo />
+          <div className="brand">
+            <FacioLogo />
+          </div>
+          <div className="brand">
+            <RockRunLogo />
+          </div>
+          <div className="brand">
+            <FesteFeirnLogo />
+          </div>
+          <div className="brand">
+            <EternoVeranoLogo />
+          </div>
+          <div className="brand">
+            <CiGobLogo />
+          </div>
+          <div className="brand">
+            <OjovaiLogo />
+          </div>
+          <div className="brand">
+            <OpePodcastLogo />
+          </div>
+          <div className="brand">
+            <DomingoAmorLogo />
+          </div>
+          <div className="brand">
+            <MaHuiLogo />
+          </div>
+          <div className="brand">
+            <VRDotLogo />
+          </div>
+          <div className="brand">
+            <MonolocoLogo />
+          </div>
+          <div className="brand">
+            <CaliforniaLogo />
+          </div>
+          <div className="brand">
+            <MoviGoLogo />
+          </div>
         </Slider>
       </div>
     </div>

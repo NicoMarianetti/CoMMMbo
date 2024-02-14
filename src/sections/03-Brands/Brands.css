@@ -1,8 +1,19 @@
 .brands {
   margin-top: 300px;
-  width: 100%;
+  width: 100vw;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+}
+
+.brand {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.brandsTitleContainer {
+  padding: 0 10%;
 }
 
 .brandTitle {
@@ -14,6 +25,7 @@
 
 .logoContainer {
   margin: 70px 0px;
+  width: 100vw;
 }
 
 .logo {

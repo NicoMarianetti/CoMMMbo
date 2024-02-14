@@ -1,21 +1,33 @@
 .featuredProjects {
-    height: 100vh;
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
 }
 
-.featuredProjectsTitle {
-    font-size: 68px;
-    font-family: "Roboto-Medium";
-    max-width: 750px;
-    text-align: left;
+.logoSlider {
+  height: 800px;
 }
 
-.logoContainer{
-    margin: 50px 0px;
+.logoSlider > *:focus {
+  outline: 0;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  width: 20vw;
+  height: 100%; /* Add this if your images are not already square */
+  position: absolute; /* Add this */
+  top: 50%; /* Add this */
+  left: 50%; /* Add this */
+  transform: translate(-50%, -50%); /* Add this */
 }
 
 .logo {
-    max-height: 350px;
-    min-width: fit-content;
+  object-fit: contain;
+  aspect-ratio: 1;
+  height: 100%;
+  width: 100%; /* Add this */
 }

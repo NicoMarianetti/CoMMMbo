@@ -21,7 +21,7 @@ function App() {
       <Experience />
       <Brands />
       <Versatility />
-      <FeatureProjects />
+      {/* <FeatureProjects /> */}
       <ClientsOpinions />
       <div className="getInTouchContainer">
         <ContactButton
