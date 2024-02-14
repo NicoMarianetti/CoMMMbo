@@ -22,20 +22,20 @@ export const Welcome = () => {
 
   const textRef = useRef<HTMLParagraphElement>(null);
   const textRef2 = useRef<HTMLParagraphElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const checkTextWidth = () => {
+    const checkTextWidth = (width: number) => {
       const textElement: HTMLParagraphElement = textRef.current!;
       const textElement2: HTMLParagraphElement = textRef2.current!;
       textElement.style.letterSpacing = `${0}px`;
       textElement2.style.letterSpacing = `${0}px`;
       const textWidth = textElement.offsetWidth;
-      const screenWidth = window.innerWidth;
 
-      if (textWidth > screenWidth) {
+      if (textWidth > width) {
         let letterSpacing = parseFloat(textElement.style.letterSpacing) || 0;
         let letterSpacing2 = parseFloat(textElement2.style.letterSpacing) || 0;
-        while (textElement.offsetWidth > screenWidth) {
+        while (textElement.offsetWidth > width) {
           letterSpacing -= 1;
           letterSpacing2 -= 1;
           textElement.style.letterSpacing = `${letterSpacing}px`;
@@ -47,7 +47,7 @@ export const Welcome = () => {
       } else {
         let letterSpacing = parseFloat(textElement.style.letterSpacing) || 0;
         let letterSpacing2 = parseFloat(textElement2.style.letterSpacing) || 0;
-        while (textElement.offsetWidth < screenWidth) {
+        while (textElement.offsetWidth < width) {
           letterSpacing += 1;
           letterSpacing2 += 1;
           textElement.style.letterSpacing = `${letterSpacing}px`;
@@ -56,19 +56,33 @@ export const Welcome = () => {
       }
     };
 
-    checkTextWidth();
+    checkTextWidth(window.innerWidth);
 
     // Add event listener for window resize
-    window.addEventListener('resize', checkTextWidth);
+    window.addEventListener('resize', () => checkTextWidth(window.innerWidth));
+    containerRef.current!.addEventListener('mouseenter', () =>
+      checkTextWidth(window.innerWidth / 2),
+    );
+    containerRef.current!.addEventListener('mouseleave', () =>
+      checkTextWidth(window.innerWidth),
+    );
 
     // Cleanup event listener on component unmount
     return () => {
-      window.removeEventListener('resize', checkTextWidth);
+      window.removeEventListener('resize', () =>
+        checkTextWidth(window.innerWidth),
+      );
+      containerRef.current!.removeEventListener('mouseenter', () =>
+        checkTextWidth(window.innerWidth / 2),
+      );
+      containerRef.current!.removeEventListener('mouseleave', () =>
+        checkTextWidth(window.innerWidth),
+      );
     };
   }, []);
 
   return (
-    <div className="containerWelcome">
+    <div className="containerWelcome" ref={containerRef}>
       <div className="textContainerWelcome">
         <TypographyHeader
           forwardedRef={textRef2}
@@ -86,7 +100,7 @@ export const Welcome = () => {
         <div className="bannerWelcomeContainer">
           <Typography style={bannerTextStyle}>Flavio Marianetti</Typography>
           <TypographyHeader style={bannerTextStyle}>
-            PORTFOLIO 2023
+            PORTFOLIO 2024
           </TypographyHeader>
           <div className="circleBannerWelcome"></div>
         </div>
@@ -102,21 +116,23 @@ export const Welcome = () => {
 
         <div className="rightWelcomeContainer">
           <div className="curvedText">
-            <ReactCurvedText
-              text="WELCOME, THIS IS ME !"
-              height={120}
-              width={120}
-              rx={40}
-              ry={40}
-              cx={60}
-              cy={60}
-              textProps={{
-                fontSize: '14px',
-                fill: '#00AF9A',
-                letterSpacing: '2px',
-              }}
-              reversed
-            />
+            <div className="curvedTextContainer">
+              <ReactCurvedText
+                text="WELCOME, THIS IS ME !"
+                height={120}
+                width={120}
+                rx={40}
+                ry={40}
+                cx={60}
+                cy={60}
+                textProps={{
+                  fontSize: '14px',
+                  fill: '#00AF9A',
+                  letterSpacing: '2px',
+                }}
+                reversed
+              />
+            </div>
             <img
               className="profilePictureWelcome"
               src={require('../../assets/img/ProfilePic.png')}

@@ -1,5 +1,5 @@
 .containerHeader {
-  height: 70px;
+  height: 100px;
   width: 100%;
   display: grid;
   grid-template-columns: 30% 30% 40%;
@@ -35,6 +35,7 @@
 .mainLogo {
   width: 100%;
   object-fit: contain;
+  transform: scaleX(-1);
 }
 
 .headersSections {

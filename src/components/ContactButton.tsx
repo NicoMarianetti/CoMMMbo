@@ -47,6 +47,7 @@ export const ContactButton = (props: ContactButtonProps) => {
         borderColor: borderColor,
         fontSize: fontSize,
         backgroundColor: isHovered ? backgroundColorHover : 'transparent',
+        zIndex: 10,
       }}
       onClick={onClick}
       onMouseEnter={handleMouseEnter}

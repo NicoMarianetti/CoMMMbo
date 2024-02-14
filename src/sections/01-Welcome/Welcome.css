@@ -137,6 +137,14 @@
   position: relative;
 }
 
+.curvedTextContainer {
+  animation: spin 60s linear infinite;
+  height: 120px;
+  width: 120px;
+
+  position: absolute;
+}
+
 .profilePictureWelcome {
   height: 25vw;
   position: absolute;
@@ -148,6 +156,28 @@
   z-index: -1;
   filter: grayscale(50%);
   background-blend-mode: luminosity;
+
+  animation: fadeInBottom 5s;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translate(-1000%, 0) rotate(60deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-100%, 0) rotate(60deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .verticalLineWelcome {
@@ -156,5 +186,6 @@
   width: 1px;
   background-color: #266eb2;
   margin: 20px;
+  margin-top: 85px;
   z-index: 1;
 }

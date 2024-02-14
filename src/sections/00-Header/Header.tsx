@@ -44,11 +44,6 @@ export const Header = () => {
           src={require('../../assets/img/FM0.png')}
           alt="logo"
         />
-        <img
-          className="mainLogo"
-          src={require('../../assets/img/FM.png')}
-          alt="logo"
-        />
       </div>
       <div></div>
       <div className="redirectsContainer">

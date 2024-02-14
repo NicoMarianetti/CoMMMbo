@@ -5,12 +5,12 @@ Minuta reunion 6/2
 - Header
   - [x] On hover las secciones que bajen la opacidad, que no cambien de color y aparezca el subrayado igual que en IA
 - Welcome section
-  - [ ] Que diga 2024
-  - [ ] Sacar FM
-  - [ ] Rotar 180
-  - [ ] On hover del titulo: Reducir el espaciado entre lineas a normal
-  - [ ] Circle text que gire constantemente, como las agujas del reloj
-  - [ ] Que la foto aparezca dinámicamente la primera vez que se carga
+  - [x] Que diga 2024
+  - [x] Sacar FM
+  - [x] Rotar 180
+  - [x] On hover del titulo: Reducir el espaciado entre lineas a normal
+  - [x] Circle text que gire constantemente, como las agujas del reloj
+  - [x] Que la foto aparezca dinámicamente la primera vez que se carga
 - Experience
   - [ ] Texto de los números alinear a la base de los números
   - [ ] Que los numeros crezcan de 0 a el valor que tienen cuando aparecen en pantalla _por primera vez_
