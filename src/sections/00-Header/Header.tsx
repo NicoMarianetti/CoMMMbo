@@ -21,17 +21,18 @@ export const Header = () => {
 
   const getTextStyles = (text: string) => {
     return {
-      color: isTextHovered(text) ? '#a178ea' : theme.text.main,
+      color: isTextHovered(text) ? theme.text.main + 'aa' : theme.text.main,
       fontSize: '15px',
       fontWeight: 'bold',
       cursor: 'pointer',
+      transition: 'color 0.3s',
     };
   };
 
   const handleTextClick = (text: string) => {
     const section = document.getElementById(text);
     if (section) {
-      section.scrollIntoView({behavior: 'smooth'}); // Change behavior to 'auto' for longer scroll
+      section.scrollIntoView({behavior: 'smooth'});
     }
   };
 
@@ -76,16 +77,15 @@ export const Header = () => {
           Projects
         </TypographyHeader>
         <div className="verticalLine" />
-          <TypographyHeader
-            style={getTextStyles('Contact')}
-            onMouseEnter={() => handleMouseEnter('Contact')}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => handleTextClick('AI')}
-            className="headersSections">
-            Contact
-          </TypographyHeader>
-        </div>
-
+        <TypographyHeader
+          style={getTextStyles('Contact')}
+          onMouseEnter={() => handleMouseEnter('Contact')}
+          onMouseLeave={handleMouseLeave}
+          onClick={() => handleTextClick('AI')}
+          className="headersSections">
+          Contact
+        </TypographyHeader>
       </div>
+    </div>
   );
 };

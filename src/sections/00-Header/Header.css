@@ -24,7 +24,7 @@
   transform: translate(-50%, 15%);
 }
 
-.redirectsContainer{
+.redirectsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -35,6 +35,28 @@
 .mainLogo {
   width: 100%;
   object-fit: contain;
+}
+
+.headersSections {
+  position: relative;
+}
+
+.headersSections::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 10%;
+  left: 0;
+  background-color: #ffffffaa;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.headersSections:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .verticalLine {
