@@ -12,8 +12,8 @@ Minuta reunion 6/2
   - [x] Circle text que gire constantemente, como las agujas del reloj
   - [x] Que la foto aparezca dinámicamente la primera vez que se carga
 - Experience
-  - [ ] Texto de los números alinear a la base de los números
-  - [ ] Que los numeros crezcan de 0 a el valor que tienen cuando aparecen en pantalla _por primera vez_
+  - [x] Texto de los números alinear a la base de los números
+  - [x] Que los numeros crezcan de 0 a el valor que tienen cuando aparecen en pantalla _por primera vez_
 - Brands
   - [ ] Debe ir de extremo a extremo
   - [ ] Que alineados las brands

@@ -1,11 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './Experience.css';
 import {Typography, TypographyHeader} from '../../assets/typography';
 import {theme} from '../../assets/theme';
 import {widthPercentageToPX} from '../../utils/size';
+import AnimatedNumber from 'react-animated-numbers';
+import {Posters} from '../../components/Posters/Posters';
 
 export const Experience = () => {
   const [hoveredPoster, setHoveredPoster] = useState<number>(-1);
+
+  const [experience, setExperience] = useState<number>(15);
+  const [brands, setBrands] = useState<number>(80);
 
   const tagStyle = {
     color: theme.text.main,
@@ -31,6 +36,7 @@ export const Experience = () => {
     fontSize: 100,
     fontWeight: 700,
     margin: 0,
+    lineHeight: 1,
   };
 
   const experienceDescriptionStyle = {
@@ -38,6 +44,7 @@ export const Experience = () => {
     fontSize: 15,
     fontWeight: 500,
     margin: 0,
+    lineHeight: 1,
   };
 
   const posters: string[] = [
@@ -50,6 +57,8 @@ export const Experience = () => {
 
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
+  const animatedNumberRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleResize = (prop: any) => {
       setWindowWidth(window.innerWidth);
@@ -61,6 +70,33 @@ export const Experience = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  // useEffect(() => {
+  //   const options = {
+  //     root: null,
+  //     rootMargin: '0px',
+  //     threshold: 0.5,
+  //   };
+
+  //   const observer = new IntersectionObserver(entries => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         setExperience(15);
+  //         setBrands(80);
+  //       }
+  //     });
+  //   }, options);
+
+  //   if (animatedNumberRef.current) {
+  //     observer.observe(animatedNumberRef.current);
+  //   }
+
+  //   return () => {
+  //     if (animatedNumberRef.current) {
+  //       observer.unobserve(animatedNumberRef.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div style={{marginBottom: '200px'}}>
@@ -90,9 +126,21 @@ export const Experience = () => {
           </div>
           <div className="middleExperience">
             <div className="yearsExperience">
-              <TypographyHeader style={experienceNumberStyle}>
-                15
-              </TypographyHeader>
+              <AnimatedNumber
+                animateToNumber={experience}
+                transitions={index => ({
+                  type: 'spring',
+                  duration: 5,
+                })}
+                fontStyle={{
+                  color: theme.text.main,
+                  fontSize: 100,
+                  fontWeight: 700,
+                  margin: 0,
+                  lineHeight: 1,
+                }}
+              />
+
               <div className="yearsExperienceDescription">
                 <Typography
                   style={{...experienceDescriptionStyle, marginBottom: 0}}>
@@ -105,8 +153,24 @@ export const Experience = () => {
             </div>
             <div className="brandsExperience">
               <TypographyHeader style={experienceNumberStyle}>
-                +80
+                +
               </TypographyHeader>
+
+              <AnimatedNumber
+                animateToNumber={brands}
+                transitions={index => ({
+                  type: 'spring',
+                  duration: 5,
+                })}
+                fontStyle={{
+                  color: theme.text.main,
+                  fontSize: 100,
+                  fontWeight: 700,
+                  margin: 0,
+                  lineHeight: 1,
+                }}
+              />
+
               <div className="brandsExperienceDescription">
                 <Typography
                   style={{...experienceDescriptionStyle, marginBottom: 0}}>
@@ -128,34 +192,7 @@ export const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="posters">
-        {posters.map((poster, index) => {
-          return (
-            <div
-              style={{
-                top: '50%',
-                left: `calc(50% - ${
-                  Math.trunc(posters.length / 2) * windowWidth * 0.15
-                }px + ${
-                  hoveredPoster !== -1 && index > hoveredPoster
-                    ? windowWidth * 0.1
-                    : 0
-                }px)`,
-                transform: 'translate(-50%, -50%)',
-                marginLeft: `${index * windowWidth * 0.15}px`,
-              }}
-              onMouseEnter={() => setHoveredPoster(index)}
-              onMouseLeave={() => setHoveredPoster(-1)}
-              className="posterContainer"
-              key={index}>
-              <img
-                src={require(`../../assets/img/${poster}`)}
-                alt={`poster${index}`}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <Posters />
     </div>
   );
 };

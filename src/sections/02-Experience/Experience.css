@@ -65,8 +65,8 @@
   align-items: start;
   flex-grow: 1;
   justify-content: start;
-  margin-bottom: 30px;
   margin-left: 1rem;
+  margin-bottom: 5px;
 }
 
 .brandsExperienceDescription {
@@ -75,7 +75,7 @@
   align-items: start;
   flex-grow: 1;
   justify-content: start;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   margin-left: 1rem;
 }
 
@@ -92,43 +92,4 @@
   flex-direction: column;
   width: 10%;
   align-items: end;
-}
-
-/* Posters */
-
-.posters {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-  position: relative;
-}
-
-.posterContainer {
-  position: absolute;
-  width: 28%;
-  aspect-ratio: 0.82;
-  display: flex;
-  z-index: 99;
-  transition: left 0.3s ease-in-out;
-}
-
-.posterContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  right: -10px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.posterContainer img:hover {
-  transform: scale(1.05);
-}
-
-.posterContainer img + img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-right: -10px;
 }
