@@ -1,21 +1,25 @@
 .containerHeader {
   height: 100px;
-  width: 100%;
+  width: 100vw;
+
+  z-index: 2;
+  background: linear-gradient(0deg, #00000000 0%, #000000 100%);
+  position: fixed;
+  top: 0;
+}
+
+.intermediateContainer {
   display: grid;
   grid-template-columns: 30% 30% 40%;
-  /* justify-content: end; */
   align-items: center;
-  /* gap: 20px; */
   position: relative;
-  z-index: 2;
+  height: 100%;
+  padding: 0 10%;
 }
 
 .mainLogoContainer {
   width: 50px;
   place-self: center;
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
   display: flex;
   gap: 10px;
   flex-direction: column;

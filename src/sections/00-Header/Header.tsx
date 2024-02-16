@@ -38,48 +38,50 @@ export const Header = () => {
 
   return (
     <div className="containerHeader">
-      <div className="mainLogoContainer">
-        <img
-          className="mainLogo"
-          src={require('../../assets/img/FM0.png')}
-          alt="logo"
-        />
-      </div>
-      <div></div>
-      <div className="redirectsContainer">
-        <TypographyHeader
-          style={getTextStyles('About')}
-          onMouseEnter={() => handleMouseEnter('About')}
-          onMouseLeave={handleMouseLeave}
-          onClick={() => handleTextClick('about')}
-          className="headersSections">
-          About
-        </TypographyHeader>
-        <TypographyHeader
-          style={getTextStyles('Services')}
-          onMouseEnter={() => handleMouseEnter('Services')}
-          onMouseLeave={handleMouseLeave}
-          onClick={() => handleTextClick('services')}
-          className="headersSections">
-          Services
-        </TypographyHeader>
-        <TypographyHeader
-          style={getTextStyles('Projects')}
-          onMouseEnter={() => handleMouseEnter('Projects')}
-          onMouseLeave={handleMouseLeave}
-          onClick={() => handleTextClick('projects')}
-          className="headersSections">
-          Projects
-        </TypographyHeader>
-        <div className="verticalLine" />
-        <TypographyHeader
-          style={getTextStyles('Contact')}
-          onMouseEnter={() => handleMouseEnter('Contact')}
-          onMouseLeave={handleMouseLeave}
-          onClick={() => handleTextClick('AI')}
-          className="headersSections">
-          Contact
-        </TypographyHeader>
+      <div className="intermediateContainer">
+        <div className="mainLogoContainer">
+          <img
+            className="mainLogo"
+            src={require('../../assets/img/FM0.png')}
+            alt="logo"
+          />
+        </div>
+        <div></div>
+        <div className="redirectsContainer">
+          <TypographyHeader
+            style={getTextStyles('About')}
+            onMouseEnter={() => handleMouseEnter('About')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleTextClick('about')}
+            className="headersSections">
+            About
+          </TypographyHeader>
+          <TypographyHeader
+            style={getTextStyles('Services')}
+            onMouseEnter={() => handleMouseEnter('Services')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleTextClick('services')}
+            className="headersSections">
+            Services
+          </TypographyHeader>
+          <TypographyHeader
+            style={getTextStyles('Projects')}
+            onMouseEnter={() => handleMouseEnter('Projects')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleTextClick('projects')}
+            className="headersSections">
+            Projects
+          </TypographyHeader>
+          <div className="verticalLine" />
+          <TypographyHeader
+            style={getTextStyles('Contact')}
+            onMouseEnter={() => handleMouseEnter('Contact')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleTextClick('AI')}
+            className="headersSections">
+            Contact
+          </TypographyHeader>
+        </div>
       </div>
     </div>
   );

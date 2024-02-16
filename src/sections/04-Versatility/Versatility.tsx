@@ -1,7 +1,7 @@
-import React from 'react';
 import './Versatility.css';
-import {Typography, TypographyHeader} from '../../assets/typography';
+import {TypographyHeader} from '../../assets/typography';
 import {theme} from '../../assets/theme';
+import {ParallaxProvider, Parallax} from 'react-scroll-parallax';
 
 export const Versatility = () => {
   const posters: string[] = [
@@ -10,72 +10,70 @@ export const Versatility = () => {
     'Spring Chance Rhythm.png',
   ];
 
+  const getSpeed = (index: number) => {
+    if (index === 0) return 30;
+    if (index === 1) return 20;
+    if (index === 2) return 60;
+  };
+
   return (
-    <div
-      style={{
-        position: 'relative',
-        height: '1000px',
-        width: '100%',
-      }}>
-      <TypographyHeader
-        className="animateRight"
+    <ParallaxProvider>
+      <div
         style={{
-          top: '20%',
-          position: 'absolute',
-          color: '#F5FB59',
-          zIndex: 999,
-          fontSize: 120,
-          whiteSpace: 'nowrap',
-          overflowX: 'visible',
-          margin: '0',
+          position: 'relative',
+          height: '1000px',
+          width: '100%',
         }}>
-        VERSATILITY . STYLE . VERSATILITY . STYLE . VERSATILITY . STYLE .
-        VERSATILITY . STYLE .
-      </TypographyHeader>
-      <TypographyHeader
-        className="animateLeft"
-        style={{
-          position: 'absolute',
-          top: '45%',
-          color: 'transparent',
-          zIndex: 999,
-          fontSize: 120,
-          WebkitTextStrokeWidth: '3px',
-          WebkitTextStrokeColor: theme.text.main,
-          whiteSpace: 'nowrap',
-          overflowX: 'visible',
-          margin: 0,
-        }}>
-        CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE .
-        CONCEPT . STYLE .
-      </TypographyHeader>
+        <TypographyHeader
+          className="animateRight"
+          style={{
+            top: '20%',
+            position: 'absolute',
+            color: '#F5FB59',
+            zIndex: 999,
+            fontSize: 120,
+            whiteSpace: 'nowrap',
+            overflowX: 'visible',
+            margin: '0',
+          }}>
+          VERSATILITY . STYLE . VERSATILITY . STYLE . VERSATILITY . STYLE .
+          VERSATILITY . STYLE .
+        </TypographyHeader>
+        <TypographyHeader
+          className="animateLeft"
+          style={{
+            position: 'absolute',
+            top: '45%',
+            color: 'transparent',
+            zIndex: 999,
+            fontSize: 120,
+            WebkitTextStrokeWidth: '1px',
+            WebkitTextStrokeColor: theme.text.main,
+            whiteSpace: 'nowrap',
+            overflowX: 'visible',
+            margin: 0,
+          }}>
+          CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE . CONCEPT . STYLE
+          . CONCEPT . STYLE .
+        </TypographyHeader>
 
-      <div className="postersVersatility">
-        {posters.map((poster, index) => (
-          <img
-            key={index}
-            src={require(`../../assets/img/${poster}`)}
-            alt={poster}
-            className={`poster${index + 1}`}
-          />
-        ))}
-
-        {/* <img
-          src={require('../../assets/img/Superchicas Musicales Vol2 POSTER copia 1.png')}
-          alt="poster1"
-          className="firstPoster"
-        />
-        <img
-          src={require('../../assets/img/poster2.png')}
-          alt="poster2"
-          className="secondPoster"
-        />
-        <img
-          src={require('../../assets/img/poster space jam 2.png')}
-          alt="poster3"
-          className="thirdPoster"
-        /> */}
+        <div className="postersVersatility">
+          {posters.map((poster, index) => (
+            <Parallax
+              key={index}
+              speed={getSpeed(index)}
+              className={`posterContainerVersatility posterContainerVersatility${
+                index + 1
+              }`}>
+              <img
+                src={require(`../../assets/img/${poster}`)}
+                alt={poster}
+                className={`poster${index + 1}`}
+              />
+            </Parallax>
+          ))}
+        </div>
       </div>
-    </div>
+    </ParallaxProvider>
   );
 };
