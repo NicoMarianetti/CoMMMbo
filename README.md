@@ -15,11 +15,11 @@ Minuta reunion 6/2
   - [x] Texto de los números alinear a la base de los números
   - [x] Que los numeros crezcan de 0 a el valor que tienen cuando aparecen en pantalla _por primera vez_
 - Brands
-  - [ ] Debe ir de extremo a extremo
-  - [ ] Que alineados las brands
+  - [x] Debe ir de extremo a extremo
+  - [x] Que alineados las brands
 - Versatility
-  - [ ] Que el stroke de Concept style reducirlo más
-  - [ ] Ver si es posible un parallax donde aparezcan las imagenes de a poco, primera la del centro y despues la de la izquierda y por ultimo la derecha, a distintas velocidades y que siempre halla algo en pantalla
+  - [x] Que el stroke de Concept style reducirlo más
+  - [x] Ver si es posible un parallax donde aparezcan las imagenes de a poco, primera la del centro y despues la de la izquierda y por ultimo la derecha, a distintas velocidades y que siempre halla algo en pantalla
 - Clients
-  - [ ] Que se corte a mitad de item el último, ver el responsiveness (mismo para feature projects) PRIORIDAD
-  - [ ] Reducir el espacio entre tarjetas si no viene el ultimo cortado
+  - [x] Que se corte a mitad de item el último, ver el responsiveness (mismo para feature projects) PRIORIDAD
+  - [x] Reducir el espacio entre tarjetas si no viene el ultimo cortado

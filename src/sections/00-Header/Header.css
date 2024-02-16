@@ -2,7 +2,7 @@
   height: 100px;
   width: 100vw;
 
-  z-index: 2;
+  z-index: 1000;
   background: linear-gradient(0deg, #00000000 0%, #000000 100%);
   position: fixed;
   top: 0;

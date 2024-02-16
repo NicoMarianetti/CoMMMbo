@@ -50,7 +50,7 @@ export const ClientsOpinions = () => {
 
   const settings: Settings = {
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 3.7,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 10000,
@@ -65,14 +65,21 @@ export const ClientsOpinions = () => {
 
   return (
     <div className="clientsOpinionsContainer">
-      <Typography
-        className="clientsOpinionsTitle"
-        style={clientsOpinionsTitleStyle}>
-        WHAT CLIENTS SAY ABOUT MY WORK
-      </Typography>
-      <Slider {...settings}>
+      <div className="titleContainerClients">
+        <Typography
+          className="clientsOpinionsTitle"
+          style={clientsOpinionsTitleStyle}>
+          WHAT CLIENTS SAY ABOUT MY WORK
+        </Typography>
+      </div>
+      <Slider {...settings} className="clientItemsContainer">
         {clients.map((client, index) => (
-          <ClientOpinion key={index} {...client} />
+          <div
+            style={{
+              padding: '0 20px',
+            }}>
+            <ClientOpinion key={index} {...client} />
+          </div>
         ))}
       </Slider>
     </div>
