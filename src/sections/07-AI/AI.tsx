@@ -68,7 +68,7 @@ export const AI = () => {
         <div
           style={{
             paddingTop: '75px',
-            margin: '0 300px',
+            margin: '0 10%',
           }}>
           <div className="introAI">
             <div className="titleAIcontainer">

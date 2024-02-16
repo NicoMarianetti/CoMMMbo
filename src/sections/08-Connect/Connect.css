@@ -1,0 +1,18 @@
+.connectContainer {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  height: 1000px;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.social {
+  justify-self: end;
+  align-self: end;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
