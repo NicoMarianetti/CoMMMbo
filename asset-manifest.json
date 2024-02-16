@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CoMMMbo/static/css/main.167e43ff.css",
-    "main.js": "/CoMMMbo/static/js/main.b5a06ef5.js",
+    "main.css": "/CoMMMbo/static/css/main.3fe3418b.css",
+    "main.js": "/CoMMMbo/static/js/main.bfb546cb.js",
     "static/js/787.6c5bd28b.chunk.js": "/CoMMMbo/static/js/787.6c5bd28b.chunk.js",
     "static/media/liquify 1.png": "/CoMMMbo/static/media/liquify 1.051e84f0e21140c5007d.png",
     "static/media/ProfilePic.png": "/CoMMMbo/static/media/ProfilePic.7cc8def91dc8778c031c.png",
@@ -43,20 +43,24 @@
     "static/media/FM.png": "/CoMMMbo/static/media/FM.18b1658354e460ecfa26.png",
     "static/media/Rock&RunLogo.svg": "/CoMMMbo/static/media/Rock&RunLogo.7b9720b54cd328e7b171989b009b6d67.svg",
     "static/media/MAHUILogo.svg": "/CoMMMbo/static/media/MAHUILogo.f4cd930478694fb8f747aebd3bb2f9d8.svg",
+    "static/media/icon-instagram.svg": "/CoMMMbo/static/media/icon-instagram.ce056f790f0a8a4a13ca8d074ab1bdb2.svg",
     "static/media/VRDotLogo.svg": "/CoMMMbo/static/media/VRDotLogo.84cdd6c182b46430e91383ec239cdf42.svg",
+    "static/media/icon-pinterest.svg": "/CoMMMbo/static/media/icon-pinterest.a3de43a21c60c79751baf613ebe4c2d2.svg",
     "static/media/CaliforniaLogo.svg": "/CoMMMbo/static/media/CaliforniaLogo.8c61c8daeee419b1e04bd4775d208217.svg",
     "static/media/slick.svg": "/CoMMMbo/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/CoMMMbo/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/CoMMMbo/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/icon-foursquare.svg": "/CoMMMbo/static/media/icon-foursquare.80125f5fcf214a54ae2d8717d37a06c1.svg",
     "static/media/slick.woff": "/CoMMMbo/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/CoMMMbo/index.html",
+    "static/media/icon-facebook.svg": "/CoMMMbo/static/media/icon-facebook.501f6472d09ad587a982942dfc615cc2.svg",
     "static/media/arrow.svg": "/CoMMMbo/static/media/arrow.6c0d1accce1519d93406fa3d573671f1.svg",
-    "main.167e43ff.css.map": "/CoMMMbo/static/css/main.167e43ff.css.map",
-    "main.b5a06ef5.js.map": "/CoMMMbo/static/js/main.b5a06ef5.js.map",
+    "main.3fe3418b.css.map": "/CoMMMbo/static/css/main.3fe3418b.css.map",
+    "main.bfb546cb.js.map": "/CoMMMbo/static/js/main.bfb546cb.js.map",
     "787.6c5bd28b.chunk.js.map": "/CoMMMbo/static/js/787.6c5bd28b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.167e43ff.css",
-    "static/js/main.b5a06ef5.js"
+    "static/css/main.3fe3418b.css",
+    "static/js/main.bfb546cb.js"
   ]
 }
