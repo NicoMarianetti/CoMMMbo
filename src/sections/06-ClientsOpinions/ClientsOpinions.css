@@ -1,5 +1,5 @@
 .clientsOpinionsContainer {
-  height: 1000px;
+  height: 800px;
   width: 100vw;
   overflow-x: visible;
   z-index: 9;
@@ -15,4 +15,10 @@
 
 .clientsOpinionsTitle {
   color: #dacaff;
+}
+
+@media (min-width: 2000px) {
+  .clientsOpinionsContainer {
+    height: 1000px;
+  }
 }

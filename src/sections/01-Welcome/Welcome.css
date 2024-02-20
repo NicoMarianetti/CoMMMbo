@@ -189,3 +189,9 @@
   margin-top: 85px;
   z-index: 1;
 }
+
+@media (min-width: 2000px) {
+  .containerWelcome {
+    height: 1200px;
+  }
+}

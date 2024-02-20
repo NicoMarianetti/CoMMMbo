@@ -43,3 +43,10 @@
 .logoContainer > * :focus {
   outline: 0;
 }
+
+@media (min-width: 2000px) {
+  .brands {
+    margin-top: 400px;
+    margin-bottom: 200px;
+  }
+}
